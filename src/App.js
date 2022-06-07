@@ -109,6 +109,7 @@ const App = () => {
           />
         </Grid>
       </Grid>
+      <Footer />
     </>
   );
 };
