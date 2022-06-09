@@ -21,7 +21,7 @@ const Footer = () => {
         <Grid item xs={12} sm={4}>
           <Box borderBottom={1}>About GoTravel Advisor</Box>
           <Box>
-            <Link href='/' color='inherit' >
+            <Link href='/About' color='inherit' >
               About Us
             </Link>
           </Box>
