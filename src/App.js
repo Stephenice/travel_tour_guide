@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CssBaseline, Grid } from "@material-ui/core";
 import "./App.css";
 import { getPlacesData, getWeatherData } from "./api/index";
@@ -71,6 +72,7 @@ const App = () => {
   };
 
   return (
+    <Router>
     <>
       <CssBaseline />
       <ThemeProvider theme={theme}>
@@ -109,7 +111,17 @@ const App = () => {
           />
         </Grid>
       </Grid>
+      <Routes>
+         <Route 
+         path='about' 
+         element={<About />} 
+         />
+      </Routes>      
+      <Footer /> 
+
     </>
+    </Router>
+
   );
 };
 
